@@ -1,0 +1,124 @@
+/* Sección Descargas */
+#descarga {
+  text-align: center;
+  color: red;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.61);
+  padding: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.descargas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 50px;
+}
+.descargaCont {
+  background-image: url(https://i.servimg.com/u/f48/15/38/49/95/site_c11.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: auto;
+  /*height: 300px;*/
+}
+/* Sección Contacto */
+.formContacto {
+  color: $color1;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: $color4;
+  text-align: center;
+  background-image: url(http://www.emagic.club/wp-content/uploads/2016/11/fondomu-1024x640.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* Sección Registro */
+.formRegistro {
+  color: orange;
+  -webkit-text-stroke: 1.3px;
+  -webkit-text-stroke-color: $color4;
+  text-align: center;
+  background-image: url(https://blog.mastercoria.com/wp-content/uploads/2015/12/mu_online_divertido.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* Sección Login */
+.formLogin {
+  color: white;
+  text-align: center;
+  background-image: url(https://i.servimg.com/u/f48/15/38/49/95/site_c11.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: auto;
+  height: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+/* Sección Ayuda */
+.parrafoAyuda {
+  /*color: $color1;*/
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: $color4;
+  background-color: rgba(0, 0, 0, 0.699);
+  font-size: 1.5rem;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.ayuda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://actualizo.com/wp-content/uploads/2017/03/Mu-2.jpg);
+  /*background-size: cover;
+  background-repeat: no-repeat;*/
+}
+
+.tutos {
+  color: red;
+  background-color: black;
+  font-size: 1.3rem;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Yomogi", cursive;
+}
+
+.parrafoVideos {
+  background-color: black;
+  /*color: white;*/
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Yomogi", cursive;
+  font-size: 1.3rem;
+}
+.ayudaVideos {
+  background-image: url(https://i.servimg.com/u/f48/15/38/49/95/site_c11.jpg);
+  /*background-repeat: no-repeat;
+  background-size: cover;*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  justify-items: center;
+}
+
+/*.hijoVideos1 {
+  border: solid white;
+}
+.hijoVideos2 {
+  border: solid white;
+}
+.hijoVideos3 {
+  border: solid white;
+}*/

@@ -1,0 +1,326 @@
+@charset "UTF-8";
+/* Variables */
+/* IMPORTS */
+body {
+  text-align: center;
+  background: radial-gradient(red, black);
+  font-family: sans-serif; }
+
+.header {
+  grid-area: header;
+  width: auto; }
+
+.navbar {
+  grid-area: navbar;
+  border: solid black;
+  width: auto; }
+
+.main {
+  grid-area: main;
+  background-image: url(http://s.glbimg.com/po/tt/f/original/2013/07/09/muonline.png);
+  border: solid black;
+  /*width: 500px;*/ }
+
+.sidebar {
+  grid-area: sidebar;
+  background: radial-gradient(blue, black);
+  border: solid black;
+  /*width: 500px;*/ }
+
+.footer {
+  grid-area: footer;
+  border: solid black;
+  background-color: black;
+  color: white; }
+
+.gridContainer {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "header" "navbar" "contenedor" "section" "descarga" "footer"; }
+
+@media (max-width: 1024px) {
+  .gridContainer {
+    background: radial-gradient(green, black); }
+  .section {
+    display: grid;
+    grid-template-areas: "main" "sidebar" !important; }
+  .main,
+  .sidebar {
+    width: auto; }
+  .imgContainer {
+    column-gap: 0px !important; }
+  .navbar ul {
+    display: inline; }
+  .descargas {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    row-gap: 20px; }
+  .formRegistro {
+    background-size: cover; }
+  .video1 {
+    grid-area: video1; }
+  .video2 {
+    grid-area: video2; }
+  .video3 {
+    grid-area: video3; }
+  #gridVideos {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-areas: "video1" "video2" "video3"; } }
+
+.img1 {
+  width: 100%;
+  height: 100%;
+  border: solid black; }
+
+.img1:hover {
+  transform: scale(1.2);
+  transform-origin: center center;
+  transition: all 0.3s ease-in-out; }
+
+.img2 {
+  width: 100%;
+  height: 100%;
+  border: solid black; }
+
+.img2:hover {
+  transform: scale(1.1);
+  transform-origin: center center;
+  transition: all 0.3s ease-in-out; }
+
+.logo {
+  grid-area: logo; }
+
+.bienvenidos {
+  grid-area: bienvenidos; }
+
+.imgContainer {
+  display: grid;
+  grid-template-areas: "logo bienvenidos";
+  justify-content: center;
+  column-gap: 100px;
+  padding: 5px; }
+
+#menu {
+  display: block;
+  background: radial-gradient(blue, black);
+  border: solid black;
+  color: white;
+  font-size: 20px; }
+
+#menu ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 20px 40px; }
+
+.navbar ul li a:hover {
+  background: radial-gradient(red, black);
+  border: solid white 1px; }
+
+.dropdown-menu {
+  background: radial-gradient(blue, black); }
+
+.titulo {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  /*background: radial-gradient(rgba(0, 0, 255, 0.603), $color4);*/
+  padding: 5px;
+  font-family: cursive; }
+
+.parrafo {
+  color: red;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.856);
+  font-weight: bold;
+  padding: 5px;
+  font-family: cursive; }
+
+.section {
+  display: grid;
+  grid-template-areas: "main sidebar";
+  justify-content: center;
+  column-gap: 100px;
+  width: auto;
+  background-image: url(http://www.emagic.club/wp-content/uploads/2016/11/fondomu-1024x640.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* Sección Descargas */
+#descarga {
+  text-align: center;
+  color: red;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.61);
+  padding: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+
+.descargas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 50px; }
+
+.descargaCont {
+  background-image: url(https://i.servimg.com/u/f48/15/38/49/95/site_c11.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: auto;
+  /*height: 300px;*/ }
+
+/* Sección Contacto */
+.formContacto {
+  color: red;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+  text-align: center;
+  background-image: url(http://www.emagic.club/wp-content/uploads/2016/11/fondomu-1024x640.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 20px; }
+
+/* Sección Registro */
+.formRegistro {
+  color: orange;
+  -webkit-text-stroke: 1.3px;
+  -webkit-text-stroke-color: black;
+  text-align: center;
+  background-image: url(https://blog.mastercoria.com/wp-content/uploads/2015/12/mu_online_divertido.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 20px; }
+
+/* Sección Login */
+.formLogin {
+  color: white;
+  text-align: center;
+  background-image: url(https://i.servimg.com/u/f48/15/38/49/95/site_c11.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: auto;
+  height: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px; }
+
+/* Sección Ayuda */
+.parrafoAyuda {
+  /*color: $color1;*/
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+  background-color: rgba(0, 0, 0, 0.699);
+  font-size: 1.5rem;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: cursive; }
+
+.ayuda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://actualizo.com/wp-content/uploads/2017/03/Mu-2.jpg);
+  /*background-size: cover;
+  background-repeat: no-repeat;*/ }
+
+.tutos {
+  color: red;
+  background-color: black;
+  font-size: 1.3rem;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Yomogi", cursive; }
+
+.parrafoVideos {
+  background-color: black;
+  /*color: white;*/
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Yomogi", cursive;
+  font-size: 1.3rem; }
+
+.ayudaVideos {
+  background-image: url(https://i.servimg.com/u/f48/15/38/49/95/site_c11.jpg);
+  /*background-repeat: no-repeat;
+  background-size: cover;*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  justify-items: center; }
+
+/*.hijoVideos1 {
+  border: solid white;
+}
+.hijoVideos2 {
+  border: solid white;
+}
+.hijoVideos3 {
+  border: solid white;
+}*/
+/* Lineas de código */
+/* SASS II, Operaciones en 3 bloques*/
+.main,
+.sidebar {
+  width: 500px; }
+
+.descargaCont {
+  height: 300px; }
+
+/* SASS II, Complementario */
+.titulo {
+  background: radial-gradient(rgba(0, 0, 255, 0.603), black); }
+
+/* BUCLE */
+.hijoVideos1 {
+  border: solid white; }
+
+.hijoVideos2 {
+  border: solid white; }
+
+.hijoVideos3 {
+  border: solid white; }
+
+/* EACH */
+.ayuda,
+.ayudaVideos {
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.Videos,
+.VideosVideos {
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* MAPA */
+.parrafoAyuda {
+  color: red; }
+
+.parrafoVideos {
+  color: white; }
+
+/* Desafío SEO */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px; }
+
+.contenedor--encabezado {
+  font-family: "Cinzel Decorative", cursive;
+  color: black;
+  background-color: gold;
+  padding: 10px;
+  border: solid black; }

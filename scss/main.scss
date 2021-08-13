@@ -1,0 +1,70 @@
+/* Variables */
+$color0: white;
+$color1: red;
+$color2: blue;
+$color3: green;
+$color4: black;
+$alto: 200px;
+$ancho: 300px;
+$fondoTitulo: Azul;
+/* IMPORTS */
+@import "generalGrids";
+@import "header";
+@import "navbar";
+@import "articside";
+@import "paginas";
+/* Lineas de código */
+/* SASS II, Operaciones en 3 bloques*/
+.main,
+.sidebar {
+  width: $ancho + 200;
+}
+.descargaCont {
+  height: $alto + 100;
+}
+/* SASS II, Complementario */
+.titulo {
+  @if $fondoTitulo == Azul {
+    background: radial-gradient(rgba(0, 0, 255, 0.603), $color4);
+  } @else {
+    background: radial-gradient(rgba(255, 0, 0, 0.603), $color4);
+  }
+}
+/* BUCLE */
+@for $i from 1 through 3 {
+  .hijoVideos#{$i} {
+    border: solid white;
+  }
+}
+/* EACH */
+@each $ayuda in ayuda, Videos {
+  .#{$ayuda},
+  .#{$ayuda}Videos {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+/* MAPA */
+$parrafos: (
+  Ayuda: $color1,
+  Videos: $color0,
+);
+@each $texto, $color in $parrafos {
+  .parrafo#{$texto} {
+    color: $color;
+  }
+}
+/* Desafío SEO */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+.contenedor--encabezado {
+  font-family: "Cinzel Decorative", cursive;
+  color: $color4;
+  background-color: gold;
+  padding: 10px;
+  border: solid $color4;
+}

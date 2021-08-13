@@ -1,0 +1,33 @@
+.img1 {
+  width: 100%;
+  height: 100%;
+  border: solid $color4;
+}
+.img1:hover {
+  transform: scale(1.2);
+  transform-origin: center center;
+  transition: all 0.3s ease-in-out;
+}
+.img2 {
+  width: 100%;
+  height: 100%;
+  border: solid $color4;
+}
+.img2:hover {
+  transform: scale(1.1);
+  transform-origin: center center;
+  transition: all 0.3s ease-in-out;
+}
+.logo {
+  grid-area: logo;
+}
+.bienvenidos {
+  grid-area: bienvenidos;
+}
+.imgContainer {
+  display: grid;
+  grid-template-areas: "logo bienvenidos";
+  justify-content: center;
+  column-gap: 100px;
+  padding: 5px;
+}

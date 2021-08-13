@@ -1,0 +1,90 @@
+body {
+  text-align: center;
+  background: radial-gradient($color1, $color4);
+  font-family: sans-serif;
+}
+.header {
+  grid-area: header;
+  width: auto;
+}
+.navbar {
+  grid-area: navbar;
+  border: solid $color4;
+  width: auto;
+}
+.main {
+  grid-area: main;
+  background-image: url(http://s.glbimg.com/po/tt/f/original/2013/07/09/muonline.png);
+  border: solid $color4;
+  /*width: 500px;*/
+}
+.sidebar {
+  grid-area: sidebar;
+  background: radial-gradient($color2, $color4);
+  border: solid $color4;
+  /*width: 500px;*/
+}
+.footer {
+  grid-area: footer;
+  border: solid $color4;
+  background-color: black;
+  color: $color0;
+}
+.gridContainer {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "header"
+    "navbar"
+    "contenedor"
+    "section"
+    "descarga"
+    "footer";
+}
+@media (max-width: 1024px) {
+  .gridContainer {
+    background: radial-gradient(green, black);
+  }
+  .section {
+    display: grid;
+    grid-template-areas:
+      "main"
+      "sidebar" !important;
+  }
+  .main,
+  .sidebar {
+    width: auto;
+  }
+  .imgContainer {
+    column-gap: 0px !important;
+  }
+  .navbar ul {
+    display: inline;
+  }
+  .descargas {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    row-gap: 20px;
+  }
+  .formRegistro {
+    background-size: cover;
+  }
+  .video1 {
+    grid-area: video1;
+  }
+  .video2 {
+    grid-area: video2;
+  }
+  .video3 {
+    grid-area: video3;
+  }
+  #gridVideos {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-areas:
+      "video1"
+      "video2"
+      "video3";
+  }
+}
