@@ -3,7 +3,7 @@
 /* IMPORTS */
 body {
   text-align: center;
-  background: radial-gradient(red, black);
+  background: radial-gradient(blue, black);
   font-family: sans-serif; }
 
 .header {
@@ -36,14 +36,20 @@ body {
 .gridContainer {
   display: grid;
   gap: 10px;
-  grid-template-areas: "header" "navbar" "contenedor" "section" "descarga" "footer"; }
+  grid-template-areas: "header"
+ "navbar"
+ "contenedor"
+ "section"
+ "descarga"
+ "footer"; }
 
 @media (max-width: 1024px) {
   .gridContainer {
     background: radial-gradient(green, black); }
   .section {
     display: grid;
-    grid-template-areas: "main" "sidebar" !important; }
+    grid-template-areas: "main"
+ "sidebar" !important; }
   .main,
   .sidebar {
     width: auto; }
@@ -67,7 +73,9 @@ body {
   #gridVideos {
     display: grid;
     grid-template-columns: none;
-    grid-template-areas: "video1" "video2" "video3"; } }
+    grid-template-areas: "video1"
+ "video2"
+ "video3"; } }
 
 .img1 {
   width: 100%;
