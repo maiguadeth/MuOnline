@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background: radial-gradient($color2, $color4);
+  background: radial-gradient($color1, $color4);
   font-family: sans-serif;
 }
 .header {
@@ -16,13 +16,13 @@ body {
   grid-area: main;
   background-image: url(http://s.glbimg.com/po/tt/f/original/2013/07/09/muonline.png);
   border: solid $color4;
-  /*width: 500px;*/
+  width: 500px;
 }
 .sidebar {
   grid-area: sidebar;
   background: radial-gradient($color2, $color4);
   border: solid $color4;
-  /*width: 500px;*/
+  width: 500px;
 }
 .footer {
   grid-area: footer;

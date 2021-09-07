@@ -15,13 +15,13 @@ $fondoTitulo: Azul;
 @import "paginas";
 /* Lineas de código */
 /* SASS II, Operaciones en 3 bloques*/
-.main,
+/*.main,
 .sidebar {
   width: $ancho + 200;
-}
-.descargaCont {
+}*/
+/*.descargaCont {
   height: $alto + 100;
-}
+}*/
 /* SASS II, Complementario */
 .titulo {
   @if $fondoTitulo == Azul {
